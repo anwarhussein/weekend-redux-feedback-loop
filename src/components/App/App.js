@@ -1,14 +1,14 @@
-import React from 'react';
-import axios from 'axios';
+import React from 'react'
+//import axios from 'axios'
 import './App.css';
-import Feeling from '../Feeling/Feeling';
-import { HashRouter as Router, Route,Link } from 'react-router-dom';
-import Understanding from '../Understanding/Understanding';
-import Review from '../Review/Review';
-import Comments from '../Comments/Comments';
-import Home from '../Home/Home';
-import Supported from '../Supported/Supported';
-import ThankYou from '../ThankYou/ThankYou';
+import Feeling from '../Feeling/Feeling.js'
+import { HashRouter as Router, Route } from 'react-router-dom';
+import Understanding from '../Understanding/Understanding'
+import Review from '../Review/Review'
+import Comments from '../Comments/Comments'
+import Home from '../Home/Home'
+import Supported from '../Supported/Supported'
+import ThankYou from '../ThankYou/ThankYou'
 
 
 function App() {

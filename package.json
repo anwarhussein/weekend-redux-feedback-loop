@@ -4,13 +4,14 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "express": "^4.17.1",
-    "pg": "^8.2.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "pg": "^8.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^4.0.1"
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.5"
@@ -28,5 +29,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anwarhussein/weekend-redux-feedback-loop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anwarhussein/weekend-redux-feedback-loop/issues"
+  },
+  "homepage": "https://github.com/anwarhussein/weekend-redux-feedback-loop#readme"
 }

@@ -1,20 +1,9 @@
+//import { useState } from 'react'
 import React from 'react'
-import {useState} from 'react';
-import {useHistory} from 'react-router-dom'
+//import { useHistory } from 'react-router-dom'
+//import { useDispatch } from 'react-redux'
 
 function Feeling() {
-    const [feeling, setFeeling] = useState('');
-
-    const dispatch = useDispatch();
-    const history = useHistory();
-    
-    const addFeeling = (event) =>{
-        event.preventDefault();
-        
-        consil
-        history.push('/understanding');
-    } 
-
 
     return (
         <div className='App'>
@@ -23,7 +12,7 @@ function Feeling() {
                 <h4>Don't forget it!</h4>
                 
             </header>
-            <button onClick={addFeeling}>Next</button>
+            <button>Next</button>
             <h2>How are you feeling today?</h2>
             
            
