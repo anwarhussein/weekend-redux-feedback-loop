@@ -34,6 +34,12 @@ const commentsToAdd = (state = [], action) => {
     }
     return state;
 }
+const thanksToAdd = (state = [], action) =>{
+    if(action.type === 'START_OVER'){
+        return [...state, action.payload]
+    }
+    return state;
+}
 
 
 const store = createStore(
@@ -43,7 +49,8 @@ const store = createStore(
             feelingToAdd,
             understandingToAdd,
             supportedToAdd,
-            commentsToAdd
+            commentsToAdd,
+            thanksToAdd
         }),
     applyMiddleware(logger)
 )
