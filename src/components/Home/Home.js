@@ -1,14 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 
 
 
 function Home() {
+    const history = useHistory();
+
+    const handleGetStarted = (event) => {
+        event.preventDefault();
+        history.push('/feeling')
+    }
+
     return (
         <div>
-        <Link to="/feeling">
-        <button>Get Started!</button>
-        </Link>
+
+            <button onClick={handleGetStarted}>Get Started!</button>
+
         </div>
     )
 }
