@@ -12,7 +12,7 @@ function ThankYou() {
             type: 'START_OVER',
             payload: null
         })
-        history('/');
+        history.push('/');
     }
     return (
         <div>

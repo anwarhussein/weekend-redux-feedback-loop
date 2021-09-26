@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import logger from 'redux-logger'
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 
-const feelingToAdd = (state ='', action) => {
+const feelingToAdd = (state = '', action) => {
 
     if (action.type === 'SET_NEW_FEELING') {
         return action.payload;
@@ -17,6 +17,8 @@ const feelingToAdd = (state ='', action) => {
 const understandingToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_UNDERSTANDING') {
         return action.payload;
+    } else if (action.payload === 'START_OVER') {
+        return state;
     }
 
     return state;
@@ -24,6 +26,8 @@ const understandingToAdd = (state = '', action) => {
 const supportedToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_SUPPORTED') {
         return action.payload;
+    } else if (action.payload === 'START_OVER') {
+        return state;
     }
     return state;
 }
@@ -31,22 +35,21 @@ const supportedToAdd = (state = '', action) => {
 const commentsToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_COMMENTS') {
         return action.payload;
-    }
-    return state;
-}
-const thanksToAdd = (state = '', action) =>{
-    if(action.type === 'START_OVER'){
-        return action.payload
+    } else if (action.payload === 'START_OVER') {
+        return state;
     }
     return state;
 }
 
-const reviewFeeback = (state = '', action) =>{
-    if(action.type === 'SET_REVIEW'){
+
+const reviewFeeback = (state = '', action) => {
+    if (action.type === 'SET_REVIEW') {
         return action.payload
+    } else if (action.payload === 'START_OVER') {
+        return state;
     }
     return state;
-} 
+}
 
 
 const store = createStore(
@@ -57,7 +60,6 @@ const store = createStore(
             understandingToAdd,
             supportedToAdd,
             commentsToAdd,
-            thanksToAdd,
             reviewFeeback
         }),
     applyMiddleware(logger)
