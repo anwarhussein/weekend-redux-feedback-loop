@@ -11,6 +11,8 @@ const feelingToAdd = (state = '', action) => {
 
     if (action.type === 'SET_NEW_FEELING') {
         return action.payload;
+    }else if (action.payload === 'START_OVER') {
+        return state;
     }
     return state;
 }

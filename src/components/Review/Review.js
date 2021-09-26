@@ -12,7 +12,7 @@ function Review() {
   const understanding = useSelector(store => store.understandingToAdd);
   const support = useSelector(store => store.supportedToAdd);
   const comments = useSelector(store => store.commentsToAdd);
-//   const listOfThanks =  useSelector(store => store.thanksToAdd);
+
 
   useEffect(() =>{
       fetchFeedback();
