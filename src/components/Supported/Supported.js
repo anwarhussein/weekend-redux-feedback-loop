@@ -28,7 +28,7 @@ function Supported() {
             <h4>Supported?</h4>
             <form onSubmit={addSupported} >
                 <input
-                    type='number'
+                    type='text'
                     required
                     placeholder="supported"
                     value={supported}

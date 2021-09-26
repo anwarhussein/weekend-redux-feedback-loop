@@ -33,7 +33,7 @@ function Understanding() {
             <h4>Understanding?</h4>
             <form onSubmit={addUnderstanding} >
                 <input
-                    type='number'
+                    type='text'
                     required
                     placeholder="understanding"
                     value={understanding}
@@ -42,10 +42,6 @@ function Understanding() {
                 <button type="submit">Next</button>
 
             </form>
-
-
-
-
 
         </div>
     )

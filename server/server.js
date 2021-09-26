@@ -11,7 +11,7 @@ app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
 
-app.use('/feedback', feedBackRouter);
+app.use('/api/feedback', feedBackRouter);
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
     console.log('Listening on port: ', PORT);

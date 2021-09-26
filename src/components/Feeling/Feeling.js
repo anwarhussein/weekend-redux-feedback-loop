@@ -30,7 +30,7 @@ function Feeling() {
             <h4>Feeling?</h4>
             <form onSubmit={addFeeling} >
                 <input
-                    type='number'
+                    type='text'
                     required
                     placeholder="feeling"
                     value={feeling}
