@@ -7,6 +7,8 @@ import { Provider } from 'react-redux'
 import logger from 'redux-logger'
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 
+
+//Feelings page reducer
 const feelingToAdd = (state = '', action) => {
 
     if (action.type === 'SET_NEW_FEELING') {
@@ -16,6 +18,8 @@ const feelingToAdd = (state = '', action) => {
     }
     return state;
 }
+
+//Understanding page reducer
 const understandingToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_UNDERSTANDING') {
         return action.payload;
@@ -25,6 +29,8 @@ const understandingToAdd = (state = '', action) => {
 
     return state;
 }
+
+//Support page reducer
 const supportedToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_SUPPORTED') {
         return action.payload;
@@ -34,6 +40,7 @@ const supportedToAdd = (state = '', action) => {
     return state;
 }
 
+//Comments page reducer
 const commentsToAdd = (state = '', action) => {
     if (action.type === 'SET_NEW_COMMENTS') {
         return action.payload;
@@ -43,7 +50,7 @@ const commentsToAdd = (state = '', action) => {
     return state;
 }
 
-
+//Review page reducer
 const reviewFeeback = (state = '', action) => {
     if (action.type === 'SET_REVIEW') {
         return action.payload
@@ -53,7 +60,7 @@ const reviewFeeback = (state = '', action) => {
     return state;
 }
 
-
+//Stores all the reducers
 const store = createStore(
 
     combineReducers(

@@ -3,6 +3,8 @@ import {useState} from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
+//Sets up the support state and
+//sends it to the store
 function Supported() {
     
     const [supported, setSupported] = useState('');

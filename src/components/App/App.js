@@ -10,7 +10,7 @@ import Home from '../Home/Home'
 import Supported from '../Supported/Supported'
 import ThankYou from '../ThankYou/ThankYou'
 
-
+//Sets up the routers
 function App() {
 
   return (
@@ -20,13 +20,13 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
       <Router>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/feeling" component={Feeling} />
-      <Route exact path="/supported" component={Supported} />
-      <Route exact path="/review" component={Review} />
-      <Route exact path="/comments" component={Comments} />
-      <Route exact path="/understanding" component={Understanding} />
-      <Route exact path="/thanks" component={ThankYou} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/feeling" component={Feeling} />
+        <Route exact path="/supported" component={Supported} />
+        <Route exact path="/review" component={Review} />
+        <Route exact path="/comments" component={Comments} />
+        <Route exact path="/understanding" component={Understanding} />
+        <Route exact path="/thanks" component={ThankYou} />
 
 
       </Router>

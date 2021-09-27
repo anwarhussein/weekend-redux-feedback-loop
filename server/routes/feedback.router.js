@@ -25,6 +25,7 @@ router.post('/',  (req, res) => {
                    VALUES ($1, $2, $3, $4);`;
   pool.query(queryText, [newFeedBack.feeling, newFeedBack.understanding, newFeedBack.support, newFeedBack.comments])
     .then(result => {
+      console.log(result);
       res.sendStatus(201);
     })
     .catch(error => {

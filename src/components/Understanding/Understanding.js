@@ -5,7 +5,8 @@ import { useDispatch } from 'react-redux'
 import { useState } from 'react'
 
 
-
+//Sets up the understanding state
+//and sends it to the store.
 function Understanding() {
 
     const [understanding, setUnderstanding] = useState('');

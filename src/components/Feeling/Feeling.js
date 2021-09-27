@@ -3,6 +3,8 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
+//Sets up the feelings state and 
+//sends to the store
 function Feeling() {
     const [feeling, setFeeling] = useState('')
 

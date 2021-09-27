@@ -2,6 +2,9 @@ import React from 'react'
 import {useState} from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+
+//Sets up the comments state and
+//sends it to the store.
 function Comments() {
 
     const [comments, setComments] = useState('');

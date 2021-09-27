@@ -1,6 +1,9 @@
 import React from 'react'
 import {useHistory} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
+
+//Set up the thank you page and 
+//sends to the store.
 function ThankYou() {
 
     const history = useHistory();
