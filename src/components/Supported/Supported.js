@@ -32,7 +32,7 @@ function Supported() {
                 <input
                     type='text'
                     required
-                    placeholder="supported"
+                    placeholder="1-5"
                     value={supported}
                     onChange={(event) => setSupported(event.target.value)}
                 />

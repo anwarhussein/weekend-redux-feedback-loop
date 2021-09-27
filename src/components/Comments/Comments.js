@@ -33,7 +33,7 @@ function Comments() {
                 <input
                     type='text'
                     required
-                    placeholder="supported"
+                    placeholder="1-5"
                     value={comments}
                     onChange={(event) => setComments(event.target.value)}
                 />

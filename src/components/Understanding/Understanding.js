@@ -26,7 +26,6 @@ function Understanding() {
     }
 
 
-
     return (
         <div>
 
@@ -36,7 +35,7 @@ function Understanding() {
                 <input
                     type='text'
                     required
-                    placeholder="understanding"
+                    placeholder="1-5"
                     value={understanding}
                     onChange={(event) => setUnderstanding(event.target.value)}
                 />

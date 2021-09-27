@@ -24,7 +24,6 @@ function Feeling() {
         history.push('/understanding');
     }
 
-
     return (
         <div className='App'>
 
@@ -34,7 +33,7 @@ function Feeling() {
                 <input
                     type='text'
                     required
-                    placeholder="feeling"
+                    placeholder="1-5"
                     value={feeling}
                     onChange={(event) => setFeeling(event.target.value)}
                 />

@@ -58,7 +58,6 @@ function Review() {
         }).catch((error) => {
             console.log('Error in posting', error);
         })
-
     }
 
     //Renders the results of the feedback to the DOM
