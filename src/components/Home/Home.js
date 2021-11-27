@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import {Button} from '@material-ui/core'
 
 
 //Home page begins the feedback
@@ -15,7 +16,7 @@ function Home() {
     return (
         <div>
 
-            <button onClick={handleGetStarted}>Get Started!</button>
+            <Button variant="contained" color="secondary" onClick={handleGetStarted} style={{marginLeft: "15px",marginTop: "10px", width:"150px"}}>Get Started</Button>
 
         </div>
     )

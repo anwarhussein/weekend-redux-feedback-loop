@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+import {TextField,Button} from '@material-ui/core'
 
 //Sets up the comments state and
 //sends it to the store.
@@ -30,14 +31,15 @@ function Comments() {
             <h2>Any comments you want to leave?</h2>
             <h4>Comments?</h4>
             <form onSubmit={addComments} >
-                <input
+                <TextField
+                    variant="outlined"
                     type='text'
                     required
                     placeholder="1-5"
                     value={comments}
                     onChange={(event) => setComments(event.target.value)}
                 />
-                <button type="submit">Next</button>
+                <Button variant="contained" color="secondary" type="submit" style={{marginLeft: "15px",marginTop: "10px", width:"150px"}}>Next</Button>
 
             </form>
             

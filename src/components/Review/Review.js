@@ -3,6 +3,8 @@ import { useHistory } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { useEffect } from 'react'
+import {Button} from '@material-ui/core'
+
 
 
 //Gets all reducers from the store
@@ -69,7 +71,7 @@ function Review() {
             <p><strong>Understanding:{understanding}</strong></p>
             <p><strong>Support:{support}</strong></p>
             <p><strong>Comments:{comments}</strong></p>
-            <p><button onClick={handleSubmit}>Submit</button></p>
+            <p><Button color  ="secondary" variant= "contained"onClick={handleSubmit} style={{marginLeft: "15px",marginTop: "10px", width:"150px"}}>Submit</Button></p>
 
         </div>
     )
