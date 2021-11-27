@@ -7,7 +7,7 @@ Weekend-redux-feedback-loop is a react-redux based project where a user is requi
 ## Problem solved
 Data persistence is maintained and thus mimics giving feedback in modern day websites and displaying the responses when needed.
 
-##How did i Solve
+## How did i Solve
 Data collected from the user are stored in the database using  server routers and database servers. The same data is retrieved from the database whenever needed and displayed to the user.
 
 ## Technologies used
