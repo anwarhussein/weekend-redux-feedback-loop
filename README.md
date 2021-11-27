@@ -19,6 +19,5 @@ React, Redux, axios,Postgresql,Material UI.
 - npm install
 - npm run server
 - npm run client.
-- 
 
 
